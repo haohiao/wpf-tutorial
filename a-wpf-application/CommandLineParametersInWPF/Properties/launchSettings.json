@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CommandLineParametersInWPF": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\桌面\\2-1.templet"
+    }
+  }
+}
