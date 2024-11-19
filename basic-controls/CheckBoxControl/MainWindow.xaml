@@ -1,0 +1,20 @@
+﻿<Window x:Class="CheckBoxControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CheckBoxControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="300">
+    <StackPanel Margin="10">
+        <Label FontWeight="Bold">Application Options</Label>
+        <StackPanel Margin="5,2">
+            <CheckBox x:Name="AllFeaturesCheckBox" IsThreeState="True" Checked="AllFeaturesCheckBox_Changed" Unchecked="AllFeaturesCheckBox_Changed">Enable all</CheckBox>
+            <StackPanel Margin="20, 2">
+                <CheckBox x:Name="FeatureAbcCheckBox" Checked="FeatureCheckBox_Changed" Unchecked="FeatureCheckBox_Changed">Enable Feature ABC</CheckBox>
+                <CheckBox x:Name="FeatureXyzCheckBox" IsChecked="True" Checked="FeatureCheckBox_Changed" Unchecked="FeatureCheckBox_Changed">Enable Feature ABC</CheckBox>
+                <CheckBox x:Name="FeatureWwwCheckBox" Checked="FeatureCheckBox_Changed" Unchecked="FeatureCheckBox_Changed">Enable Feature ABC</CheckBox> 
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Window>

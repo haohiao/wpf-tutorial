@@ -1,0 +1,26 @@
+﻿<Window x:Class="TextBlockControlInlineFormatting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextBlockControlInlineFormatting"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Margin="20">
+            TextBlock with <Bold>bold</Bold>, <Italic>Italic</Italic> and <Underline>underlined</Underline> text.
+        </TextBlock>
+        <TextBlock Margin="20">
+            This text has a <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.google.com">link</Hyperlink> in it.
+        </TextBlock>
+        <TextBlock Margin="20" TextWrapping="Wrap">
+			This <Span FontWeight="Bold">is</Span> a
+			<Span Background="Silver" Foreground="Maroon">TextBlock</Span>
+			with <Span TextDecorations="Underline">several</Span>
+			<Span FontStyle="Italic">Span</Span> elements,
+			<Span Foreground="Blue">
+				using a <Bold>variety</Bold> of <Italic>styles</Italic>
+			</Span>.
+        </TextBlock>
+    </StackPanel>
+</Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="ButtonControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ButtonControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Padding" Value="10" />
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <Button Margin="10" Click="Button_Click">Hello World</Button>
+        <Button Margin="10" Background="#333" Foreground="#fff" FontWeight="Bold">Formatted Button</Button>
+        <Button Margin="10">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Formatted </TextBlock>
+                <TextBlock Foreground="Blue" FontWeight="Bold">Button</TextBlock>
+                <TextBlock Foreground="Gray" FontStyle="Italic">[Various]</TextBlock>
+            </StackPanel>
+        </Button>
+        <Button Margin="10">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="https://cdn1.iconfinder.com/data/icons/ionicons-sharp-vol-2/512/server-sharp-64.png" Width="20" />
+                <TextBlock Margin="10 0 0 0">Image Button</TextBlock>
+            </StackPanel>
+        </Button>
+    </StackPanel>
+</Window>
