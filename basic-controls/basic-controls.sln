@@ -5,15 +5,21 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextBlockControl", "TextBlockControl\TextBlockControl.csproj", "{B14B21C0-76DC-41BD-A54B-5255C7C7A939}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBlockControlInlineFormatting", "TextBlockControlInlineFormatting\TextBlockControlInlineFormatting.csproj", "{3411311A-482C-439F-8ED3-4289D46F232B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextBlockControlInlineFormatting", "TextBlockControlInlineFormatting\TextBlockControlInlineFormatting.csproj", "{3411311A-482C-439F-8ED3-4289D46F232B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabelControl", "LabelControl\LabelControl.csproj", "{AD504C56-96E3-4A96-821B-02534A89C165}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabelControl", "LabelControl\LabelControl.csproj", "{AD504C56-96E3-4A96-821B-02534A89C165}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBoxControl", "TextBoxControl\TextBoxControl.csproj", "{387C9C29-5D38-4C2B-A286-E486F67F5B6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextBoxControl", "TextBoxControl\TextBoxControl.csproj", "{387C9C29-5D38-4C2B-A286-E486F67F5B6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonControl", "ButtonControl\ButtonControl.csproj", "{E4E3699A-72CD-4F86-93C5-274E092D4D3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ButtonControl", "ButtonControl\ButtonControl.csproj", "{E4E3699A-72CD-4F86-93C5-274E092D4D3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBoxControl", "CheckBoxControl\CheckBoxControl.csproj", "{8F38298F-431B-46FA-8DEF-2E40D1106451}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckBoxControl", "CheckBoxControl\CheckBoxControl.csproj", "{8F38298F-431B-46FA-8DEF-2E40D1106451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioButtonControl", "RadioButtonControl\RadioButtonControl.csproj", "{961B9C12-0A3F-40B7-89A8-CA71CFF40AB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordBoxControl", "PasswordBoxControl\PasswordBoxControl.csproj", "{6A274A54-BEA4-409B-A51E-67546AE14664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageControl", "ImageControl\ImageControl.csproj", "{0D139DF3-2290-456D-9158-A842E9CB9634}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{8F38298F-431B-46FA-8DEF-2E40D1106451}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F38298F-431B-46FA-8DEF-2E40D1106451}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F38298F-431B-46FA-8DEF-2E40D1106451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961B9C12-0A3F-40B7-89A8-CA71CFF40AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961B9C12-0A3F-40B7-89A8-CA71CFF40AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961B9C12-0A3F-40B7-89A8-CA71CFF40AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961B9C12-0A3F-40B7-89A8-CA71CFF40AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A274A54-BEA4-409B-A51E-67546AE14664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A274A54-BEA4-409B-A51E-67546AE14664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A274A54-BEA4-409B-A51E-67546AE14664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A274A54-BEA4-409B-A51E-67546AE14664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D139DF3-2290-456D-9158-A842E9CB9634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D139DF3-2290-456D-9158-A842E9CB9634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D139DF3-2290-456D-9158-A842E9CB9634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D139DF3-2290-456D-9158-A842E9CB9634}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

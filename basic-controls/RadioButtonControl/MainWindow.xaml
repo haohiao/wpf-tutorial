@@ -1,0 +1,19 @@
+﻿<Window x:Class="RadioButtonControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RadioButtonControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="200">
+    <StackPanel Margin="10">
+        <Label Content="Ara you ready?" Padding="0,5" />
+        <RadioButton GroupName="ready" Content="Yes" />
+        <RadioButton GroupName="ready" Content="No" />
+        <RadioButton GroupName="ready" Content="Maybe" />
+        <Label Content="Male or female" Padding="0,5" />
+        <RadioButton GroupName="sex" Content="Male" />
+        <RadioButton GroupName="sex" Content="Female" />
+        <RadioButton GroupName="sex" Content="Not sure" />
+    </StackPanel>
+</Window>
