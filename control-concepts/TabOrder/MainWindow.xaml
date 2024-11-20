@@ -1,0 +1,36 @@
+﻿<Window x:Class="TabOrder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TabOrder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="450">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Content="_First Name" Target="{Binding ElementName=FirstNameTextBox}" />
+            <TextBox x:Name="FirstNameTextBox" TabIndex="0" />
+            <Label Content="_Street Name:" Target="{Binding ElementName=StreetNameTextBox}" />
+            <TextBox x:Name="StreetNameTextBox" TabIndex="2" />
+            <Label Content="_City:" />
+            <TextBox x:Name="CityTextBox" IsReadOnly="True" IsTabStop="False" TabIndex="5" Background="Gainsboro" />
+        </StackPanel>
+        <StackPanel Grid.Column="2">
+            <Label Content="_Last Name" Target="{Binding ElementName=LastNameTextBox}" />
+            <TextBox x:Name="LastNameTextBox" TabIndex="1" />
+            <Label Content="_Zip Code:" Target="{Binding ElementName=ZipCodeNameTextBox}" />
+            <TextBox x:Name="ZipCodeNameTextBox" TabIndex="3" />
+        </StackPanel>
+        <Button Grid.Row="1" Width="100" HorizontalAlignment="Right" Content="Add" />
+        <Button Grid.Row="1" Grid.Column="2" Width="100" HorizontalAlignment="Left" Content="Cancel" />
+    </Grid>
+</Window>
