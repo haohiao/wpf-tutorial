@@ -1,0 +1,24 @@
+﻿<Window x:Class="UpdateSourceTriggerProperty.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UpdateSourceTriggerProperty"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="100" Width="300">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <WrapPanel Orientation="Horizontal">
+                <TextBlock Text="Window title: " />
+                <TextBox x:Name="TitleTextBox" Text="{Binding Title, UpdateSourceTrigger=Explicit}" Width="163" />
+                <Button x:Name="ChangeTitleButton" Content="*" Width="20" Margin="10,0,0,0" Click="ChangeTitleButton_Click" />
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="Window dimensions: " />
+                <TextBox Text="{Binding Width, UpdateSourceTrigger=LostFocus}" Width="50" />
+                <TextBox Text=" x " />
+                <TextBox Text="{Binding Height, UpdateSourceTrigger=PropertyChanged}" Width="50" />
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
