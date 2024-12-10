@@ -1,0 +1,19 @@
+﻿<Window x:Class="DebuggingDataBindings.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DebuggingDataBindings"
+        xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
+        mc:Ignorable="d"
+        x:Name="wnd"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <local:DebugDummyConverter x:Key="DebugDummyConverter" />
+    </Window.Resources>
+    <StackPanel Margin="10" Name="pnlMain">
+        <TextBlock Text="{Binding NonExistingProperty, ElementName=pnlMain, Converter={StaticResource DebugDummyConverter}}" />
+        <TextBlock Text="{Binding Title, diag:PresentationTraceSources.TraceLevel=High, Converter={StaticResource DebugDummyConverter}}" />
+        <TextBlock Text="{Binding Title, ElementName=wnd, Converter={StaticResource DebugDummyConverter}}" />
+    </StackPanel>
+</Window>
